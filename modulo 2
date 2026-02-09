@@ -8,3 +8,7 @@ if (nota >= 90) {
 } else {
     console.log("El estudiante no aprobo");
 }
+
+let colores = ['rojo', 'verde', 'azul', 'amarillo'];
+colores.shift(); 
+console.log(colores);

@@ -1,0 +1,16 @@
+
+const frutas = ["manzana", "pera", "manzana", "platano", "pera", "manzana"];
+const conteoFrutas = {};
+
+for (let i = 0; i < frutas.length; i++) {
+    let fruta = frutas[i];
+    
+    // Si la fruta ya existe en el objeto, sumamos 1, si no, la iniciamos en 1
+    if (conteoFrutas[fruta]) {
+        conteoFrutas[fruta]++;
+    } else {
+        conteoFrutas[fruta] = 1;
+    }
+}
+
+console.log("Resultado:", conteoFrutas);
