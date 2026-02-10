@@ -1,0 +1,18 @@
+
+
+function AgregarLibroLeido(libro) {
+
+    let librosLeidos = [];
+    librosLeidos.push(libro);
+    return librosLeidos;
+}
+ console.log("Libros leídos: " + AgregarLibroLeido("El Quijote"));
+ console.log("Libros leídos: " + AgregarLibroLeido("Cien Años de Soledad"));
+
+ function mostrarLibrosLeidos() {
+
+    let librosLeidos = ["El Quijote", "Cien Años de Soledad"];
+    console.log("Libros leídos: " + librosLeidos.join(", "));
+}
+
+mostrarLibrosLeidos();
