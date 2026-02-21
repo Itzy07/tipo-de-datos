@@ -1,0 +1,67 @@
+const biblioteca = [ 
+    {
+    titulo: "rey arturo",
+    autor: "T.H. White",
+    año: 1958,
+    genero: "Fantasía",
+    sinopsis: "La historia de un rey mítico llamado Arturo.",
+    estadodellibro: "disponible",
+    describirellibro: function() {
+        console.log(`Libro titulado ${this.titulo}, escrito por ${this.autor} en el año ${this.año}, el estado es: ${this.estadodellibro}.`);
+
+    
+     }
+        },
+    
+
+   {
+    titulo: "Robin Hood",
+    autor: "Howard Pyle",
+    año: 1883,
+    genero: "Aventura",
+    sinopsis: "La historia de un ladrón de bosque llamado Robin Hood.",
+    estadodellibro: "prestado",
+    describirellibro: function() {
+        console.log(`Libro titulado ${this.titulo}, escrito por ${this.autor} en el año ${this.año}, el estado es: ${this.estadodellibro}.`);
+    }
+    },
+
+    {
+    titulo: "pitter pan",
+    autor: "J.M. Barrie",
+    año: 1911,
+    genero: "Fantasía",
+    sinopsis: "La historia de un niño que no quería crecer.",
+    estadodellibro: "prestado",
+   describirellibro: function() {
+        console.log(`Libro titulado ${this.titulo}, escrito por ${this.autor} en el año ${this.año}, el estado es: ${this.estadodellibro}.`);
+    }
+    },
+   
+    {
+    titulo: "cascanueces",
+    autor: "J.E. Hoffman",
+    año: 1816,
+    genero: "Fantasía",
+    sinopsis: "La historia de un cascanueces que cobra vida.",
+    estadodellibro: "disponible",
+    describirellibro: function() {
+        console.log(`Libro titulado ${this.titulo}, escrito por ${this.autor} en el año ${this.año}, el estado es: ${this.estadodellibro}.`);
+    }
+    },
+
+    {
+    titulo: "caperucita roja",
+    autor: "Charles Perrault",
+    año: 1697,
+    genero: "Cuento de hadas",
+    sinopsis: "La historia de una niña que se pierde en el bosque.",
+    estadodellibro: "disponible",
+    describirellibro: function() {
+        console.log(`Libro titulado ${this.titulo}, escrito por ${this.autor} en el año ${this.año}, el estado es: ${this.estadodellibro}.`);
+    }
+    },
+
+];
+
+biblioteca[1].describirellibro();
