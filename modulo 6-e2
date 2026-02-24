@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cambiar contenido con JavaScript</title>
+
+</head>
+
+<body>
+
+    <h1 id="titulo">¡Bienvenido a mi página!</h1>  
+
+    <button id="boton">Mostrar Contenido</button>
+       <p id="miParrafo">¡Ta-da! Aquí está el mensaje oculto.</p>
+
+    <script>
+
+        const boton  = document.getElementById("boton");
+        const parrafo = document.getElementById("miParrafo");
+       
+        boton.addEventListener("click", function() { // llamo a la funcion anonima
+            if (parrafo.style.display === "none") {   // aca pongo la condicion para verificar si el display es none, lo que significa que el parrafo esta oculto
+                 // Si está oculto, lo mostramos
+                parrafo.style.display = "block";
+                boton.textContent = "Ocultar Contenido";
+            } else {
+                 // Si está visible, lo ocultamos
+                parrafo.style.display = "none";
+                boton.textContent = "Mostrar Contenido";
+            }
+            
+        });
+    </script>
+
+</body>
+
+</html>

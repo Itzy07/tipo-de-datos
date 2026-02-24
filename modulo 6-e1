@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cambiar contenido con JavaScript</title>
+
+</head>
+
+<body>
+
+    <h1 id="titulo">¡Bienvenido a mi página!</h1>
+
+    <p id="parrafo">Este es el contenido inicial.</p>
+
+    <button id="boton">Cambiar Contenido!!</button>
+
+    <script>
+
+        const boton = document.getElementById("boton");
+        const parrafo = document.getElementById("parrafo");
+        const titulo = document.getElementById("titulo");
+
+        boton.addEventListener("click", function() {
+           if(boton.textContent === "Cambiar Contenido!!") {
+            titulo.textContent = "¡Contenido actualizado!";
+            parrafo.textContent = "Este  contenido ha sido cambiado usando JavaScript.";
+            boton.textContent = "regresar contenido";
+        } else {
+            titulo.textContent = "¡Bienvenido a mi página!";
+            parrafo.textContent = "Este es el contenido inicial.";
+            boton.textContent = "Cambiar Contenido!!";
+        }
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>caja de Comentarios</title>
+    <style>
+        body { font-family: sans-serif; max-width: 500px; margin: 20px auto; }
+        #listaComentarios { margin-top: 20px; }
+        .comentario { 
+            background: #f9f9f9; 
+            border: 1px solid #ddd; 
+            padding: 10px; 
+            margin-bottom: 10px; 
+            border-radius: 5px;
+        }
+        .fecha { font-size: 0.8em; color: #ed27af; display: block; margin-top: 5px; }
+        .btn-eliminar { background: #ff4d4d; color: white; border: none; padding: 5px; cursor: pointer; border-radius: 3px; margin-top: 5px; }
+    </style>
+</head>
+<body>
+     <h1>¡Bienvenido a la caja de comentarios!</h1>
+     <h2> ¿Cual es tu nombre?</h2>
+    <input id="nombre"/>
+    <button id="enviar_btn">Enviar</button>
+    <h2>Deja tu comentario acerca de la última clase</h2>
+    <textarea id="textoComentario" placeholder="Escribe algo aquí..." rows="4" style="width: 100%;"></textarea>
+    <button id="btnPublicar">Publicar Comentario</button>
+
+    <div id="listaComentarios">
+        <!-- Aquí aparecerán los comentarios -->
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
