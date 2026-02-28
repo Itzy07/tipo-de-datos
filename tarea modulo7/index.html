@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+    <div>
+    <!-- Salida de pasword-->
+    <p id="generated_password">PASSWORD</p>
+    </div>
+
+    <section class="settings-container">
+    <div class="form">
+       <!-- salida que indica el largo de la contraseña-->
+         <p>Character Length <span>10</span></p>
+    
+         <!-- Slider-->
+       
+        <input id="password_range" type="range" min="0" max="20"/>
+
+         <!-- incluir mayusculas-->
+        <input id="uppercase_checkbox" type="checkbox" /> <span>Include Uppercase Letters</span>
+
+        <!-- incluir numeros-->
+         <input id="numbers_checkbox" type="checkbox" /> <span>Include Numbers</span>
+
+        <!-- incluir simbolos-->
+         <input id="symbols_checkbox" type="checkbox" /> <span>Include Symbols</span>
+   
+
+    </div>
+    
+    
+
+
+      <!-- es para la fuerza de mi contraseña-->
+     <div class="strength-meter">
+                <span class="label">STRENGTH</span>
+                <div class="strength-status">
+                    <span id="strengthText">MEDIUM</span>
+                    <div class="bars" id="strengthBars">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+
+   <button id= "generate_btn">GENERATE -> </button>
+   </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
