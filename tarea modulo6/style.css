@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(156, 166, 226);
+    color: var(--text-main);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+:root {
+    --bg-dark: #08070b;
+    --container-bg: #24232c;
+    --neon-green: #a4ffaf;
+    --text-main: #1d1831;
+    --text-muted: #817d92;
+}
+
